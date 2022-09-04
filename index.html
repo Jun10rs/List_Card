@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/open.svg" type="image/x-icon">
+    <link rel="stylesheet" href="src/style.css">
+    <script src="js/app.js" type="module"></script>
+    <title>DEVinKnowledge</title>
+    
+  
+</head>
+<body>
+        <div id="container">
+
+            <div id="coluna-esquerda">
+
+                
+                <h1>
+                    <img id="img-logo" src="img/newspaper-outline.svg" alt="img"> 
+                    DEVin<br><span>Knowledge</span></h1>
+               
+
+                <form id="formulario">
+
+                    <label for="ftitle">Titulo*</label>
+                    <input type="text" name="title" id="ftitle" minlength="4" maxlength="64" required
+                        placeholder="  Digite um titulo..." >
+
+                    <label for="flinguagem">Linguagem e Skills*</label>
+                    <input type="text" name="linguagem" id="flinguagem" minlength="4" maxlength="32" required
+                        placeholder="  Digite uma linguagem...">
+
+                    <label for="fcategoria">Categoria*</label>
+                    <select name="categoria" id="fcategoria">
+                        <option value="FrontEnd">FrontEnd</option>
+                        <option value="BackEnd">BackEnd</option>
+                        <option value="FullStack">FullStack</option>
+                        <option value="Comportamental/Soft">Comportamental/Soft</option>
+                    </select> 
+
+                    <label for="fdescrisao">Descrisão*</label>
+                    <textarea name="descrisao" id="fdescrisao" maxlength="512" required
+                        placeholder="  Escreva aqui sua dica..."></textarea>
+
+                    <label for="f-link">Video do YouTube</label>
+                    <input type="url" id="f-link" name="link" placeholder="https://example.com" minlength="18" maxlength="130">
+                    
+                    <div id="botao-form">
+                        <button type="submit" id="btn-salvar">Salvar</button> 
+                        <button type="reset" id="btn-limpar">Limpar</button>  
+                    </div>
+                    
+                </form>
+            </div>
+
+            <div id="coluna-direita">
+
+                <div id="div-card">
+                    
+                    <div id="card-total">
+                        <h3>Total</h3>
+                        <p id="total-valor"></p>
+                    </div>
+
+                    <div id="card-front">
+                        <h3>FrontEnd</h3>
+                        <p id="front-valor"></p>
+                    </div>
+
+                    <div id="card-back">
+                        <h3>BackEnd</h3>
+                        <p id="back-valor"></p>
+                    </div>
+
+                    <div id="card-full">
+                        <h3>FullStack</h3>
+                        <p id="full-valor"></p>   
+                    </div>
+
+                    <div id="card-soft">
+                        <h3>Soft Skills</h3>
+                        <p id="soft-valor"></p>
+                    </div>
+                </div> 
+        
+                <div class="busca">
+                    <input type="text" name="busca" id="txtbusca" placeholder="Digite um titulo para buscar..." >
+                    <button id="btn-busca"><img src="img/busca.svg" alt="pesquisar"></button>
+                    <button id="btn-limparb"><img src="img/fechar.svg" alt="limpar"></button>
+                </div>
+                
+                <div class="lista">
+                    <ul id="lista-dicas">
+                        <!-- <li>
+                            <h1>Titulo</h1>
+                            <h3>Linguagem:</h3>
+                            <h3>Categoria: </h3>
+                            <p>Cascading Style Sheets é um mecanismo para adicionar estilo a um 
+                                documento web. O código CSS pode ser aplicado diretamente nas 
+                                tags ou ficar contido dentro das tags style. Também é possível, 
+                                em vez de colocar a formatação dentro do documento, criar um link
+                                para um arquivo CSS que contém os estilos.</p>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div> 
+        
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
